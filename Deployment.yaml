@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest 
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: clone-volume
+          mountPath: /usr/share/nginx/html   
+      initContainers:
+      - name: init-1
+        image: alpine/git:latest
+        env:
+        - name: git-repo
+          valueFrom:
+            configMapKeyRef:
+              name: C_M
+              key: git-repo
+        volumeMounts:
+        - name: clone-volume
+          mountPath: /cdn
+        command: ['sh', '-c', 'cd /cdn && git clone $env']
+      volumes:
+      - name: clone-volume
+        emptyDir: {}
+    
