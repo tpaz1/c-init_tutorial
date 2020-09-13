@@ -10,7 +10,7 @@ In the following lab we will use:
 
 * Volume
 * C-INIT
-* ConfigMap
+* `ConfigMap`
 * SERVICE type ClusterIp
 * Ingress
 * LoadBalancer as a proxy to ingress
