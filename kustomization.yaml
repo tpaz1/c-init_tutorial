@@ -5,3 +5,4 @@ resources:
 - ConfigMap.yaml
 - ingress.yaml
 - Deployment.yaml
+- service.yaml
