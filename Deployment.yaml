@@ -26,7 +26,7 @@ spec:
       - name: init-1
         image: alpine/git:latest
         env:
-        - name: git-repo
+        - name: gitrepo
           valueFrom:
             configMapKeyRef:
               name: config-map
@@ -34,7 +34,7 @@ spec:
         volumeMounts:
         - name: clone-volume
           mountPath: /cdn
-        command: ['sh', '-c', 'cd /cdn && git clone $env && ls -l']
+        command: ['sh', '-c', 'cd /cdn && git clone $gitrepo && ls -l']
       volumes:
       - name: clone-volume
         emptyDir: {}
