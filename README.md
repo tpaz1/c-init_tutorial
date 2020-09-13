@@ -8,12 +8,12 @@ The outcome is that whenever a new container starts, it will start with the most
 
 In the following lab we will use:
 
-* Volume
-* C-INIT
-* ConfigMap
-* SERVICE type ClusterIp
-* Ingress
-* LoadBalancer as a proxy to ingress
+* `Volume`
+* `C-INIT`
+* `ConfigMap`
+* `SERVICE` type `ClusterIp`
+* `Ingress`
+* `LoadBalancer` as a proxy to `ingress`
  
 
 
