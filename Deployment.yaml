@@ -30,7 +30,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: config-map
-              key: git-repo
+              key: gitrepo
         volumeMounts:
         - name: clone-volume
           mountPath: /cdn
