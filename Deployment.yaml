@@ -34,7 +34,7 @@ spec:
         volumeMounts:
         - name: clone-volume
           mountPath: /cdn
-        command: ['sh', '-c', 'cd /cdn && git clone $gitrepo && ls -l']
+        command: ['sh', '-c', 'cd /cdn && git clone $gitrepo']
       volumes:
       - name: clone-volume
         emptyDir: {}
