@@ -1,4 +1,4 @@
-                                                                     tutorial
+                                                            tutorial
 
 In this tutorial I Created a deployment Spec that creates a simple nginx application with a volume type EmptyDir and an init container (containers that run before the main container runs with your containerized application) .
 
