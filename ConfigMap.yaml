@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: config-map
 data:
-  git-repo: https://github.com/tpaz1/aws_instances.git
+  gitrepo: https://github.com/tpaz1/aws_instances.git
