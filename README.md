@@ -10,9 +10,9 @@ In the following lab we will use:
 
 * `Volume`
 * `C-INIT`
-* `ConfigMap`
+* [`ConfigMap`](./ConfigMap)
 * [SERVICE](./service.yaml) type `ClusterIp`
-* [Ingress](./ingress.yaml
+* [Ingress](./ingress.yaml)
 * `LoadBalancer` as a proxy to `ingress`
  
 
