@@ -1,1 +1,1 @@
-kubectl kustomize . | kubectl apply -f -
+kubectl kustomize k8s | kubectl apply -f -
