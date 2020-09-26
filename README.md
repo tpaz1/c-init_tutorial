@@ -11,8 +11,8 @@ In the following lab we will use:
 * `Volume`
 * `C-INIT`
 * `ConfigMap`
-* `SERVICE` type `ClusterIp`
-* `Ingress`
+* [SERVICE](./service.yaml) type `ClusterIp`
+* [Ingress](./ingress.yaml
 * `LoadBalancer` as a proxy to `ingress`
  
 
